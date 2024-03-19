@@ -1,4 +1,4 @@
-use_bpm 110
+use_bpm 120
 use_synth :piano
 s = 1.5
 
