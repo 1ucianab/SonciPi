@@ -1,46 +1,25 @@
+
 use_bpm 120
 use_synth :piano
-s = 1.5
 
 #repeats throughout song
-define :back do
-  play :f3, sustain: s
-  play :a3, sustain: s
-  play :c4, sustain: s
-  
+define :back do |n, n2, n3, s|
+  play n, sustain: s
+  play n2, sustain: s
+  play n3, sustain: s
   sleep 2
-  
-  play :f3, sustain: s
-  play :a3, sustain: s
-  play :c4, sustain: s
-  
-  sleep 2
-  
-  play :g3, sustain: s
-  play :b3, sustain: s
-  play :d4, sustain: s
-  
-  sleep 2
-  
-  play :g3, sustain: s
-  play :b3, sustain: s
-  play :d4, sustain: s
-  
+  play n, sustain: s
+  play n2, sustain: s
+  play n3, sustain: s
   sleep 2
 end
 # end of repeating segment
 
-play :f3, sustain: s
-play :a3, sustain: s
-play :c4, sustain: s
+back :f3, :a3, :c4, 1.6
 
-sleep 2
+back :g3, :b3, :d4, 1.6
 
-play :f3, sustain: s
-play :a3, sustain: s
-play :c4, sustain: s
-
-sleep 2
+back :f3, :a3, :c4, 1.6
 
 play :g3, sustain: 3
 play :b3, sustain: 3
@@ -48,4 +27,3 @@ play :d4, sustain: 3
 
 sleep 3
 
-back
