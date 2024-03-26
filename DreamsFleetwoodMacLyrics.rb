@@ -117,6 +117,18 @@ sleep s
 play :a4
 sleep s
 #startbridge
+=begin
+sblyrics = [:d5, :e5, :d5, :c5, :a4, :d5, :e5, :d5, :c5, :a4, :d5, :c5, :g4, :g4]
+sb = 0
+sbsus = [0, 1, 0, 1, 0, 0, 0, 1.5, 0, 0, 1, 3, 0, 0]
+
+14.times do
+  play sblyrics[sb], sustain: sbsus[sb]
+  sleep s
+  sb = sb + 1
+end
+=end
+
 play :d5
 sleep s
 play :e5, sustain: 1
@@ -146,3 +158,41 @@ sleep s
 play :g4
 sleep s
 #bridge
+=begin
+brlyrics = [:e5, :d5, :c5, :c5, :a4, :d5, :c5, :c5, :d5, :d5, :c5, :g4, :g4]
+br = 0
+brsus = [1.5, 1, 1, 0, 0, 1 ,1, 1, 0, 1, 3, 0, 0]
+
+13.times do
+  play brlyrics[br], sustain: brsus[br]
+  sleep s
+  br = br + 1
+end
+=end
+
+play :e5, sustain: 1.5
+sleep s
+play :d5, sustain: 1
+sleep s
+play :c5, sustain: 1
+sleep s
+play :c5
+sleep s
+play :a4
+sleep s
+play :d5, sustain: 1
+sleep s
+play :c5, sustain: 1
+sleep s
+play :c5, sustain: 1
+sleep s
+play :d5
+sleep s
+play :d5, sustain: 1
+sleep s
+play :c5, sustain: 3
+sleep s
+play :g4
+sleep s
+play :g4
+sleep s
