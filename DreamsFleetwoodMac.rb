@@ -47,9 +47,9 @@ back :g3, :b3, :d4, 1.6
 
 back :f3, :a3, :c4, 1.6
 
-#10
-back :g3, :b3, :d4, 1.6
-
-back :f3, :a3, :c4, 1.6
-
-back :g3, :b3, :d4, 1.6
+=begin
+live_loop :foo do
+  back :f3, :a3, :c4, 1.6
+  back :g3, :b3, :d4, 1.6
+end
+=end
