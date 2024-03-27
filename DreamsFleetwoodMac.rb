@@ -55,9 +55,11 @@ live_loop :foo do
   back :g3, :b3, :d4, 1.6
 end
 
+=begin
+
 14.times do
   play ilyrics[i], sustain: sus[i]
-  sleep is[i]
+  sleep s
   i = i + 1
 end
 
@@ -92,3 +94,4 @@ sleep 3
   sleep s
   br = br + 1
 end
+=end
