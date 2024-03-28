@@ -3,6 +3,9 @@ use_bpm 120
 use_synth :piano
 s = 1
 
+freedom = "C:/Users/luciana_brennan/Desktop/you_want_your_freedom.mp3"
+
+
 ilyrics = [:a4, :c5, :d5, :e5, :d5, :c5, :a4, :c5, :d5, :a4, :c5, :a4, :d5, :a4,]
 i = 0
 sus = [1.6, 0, 1.6, 2, 0, 1.6, 0, 0, 2, 0, 1, 0, 2, 2.5]
@@ -55,8 +58,6 @@ live_loop :foo do
   back :g3, :b3, :d4, 1.6
 end
 
-=begin
-
 14.times do
   play ilyrics[i], sustain: sus[i]
   sleep s
@@ -94,4 +95,3 @@ sleep 3
   sleep s
   br = br + 1
 end
-=end
