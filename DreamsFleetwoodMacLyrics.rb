@@ -122,42 +122,43 @@ sleep 1
 sblyrics = [:d5, :e5, :d5, :c5, :a4, :d5, :e5, :d5, :c5, :a4, :d5, :c5, :g4, :g4]
 sb = 0
 sbsus = [0, 1, 0, 1, 0, 0, 0, 1.5, 0, 0, 1, 3, 0, 0]
+sbmimi = [0.5, 1, 0.5, 1, 1, 0.5, 1, 1, 0.5, 0.5, 1, 0.5, 2, 1]
 
 14.times do
   play sblyrics[sb], sustain: sbsus[sb]
-  sleep s
+  sleep sbmimi [sb]
   sb = sb + 1
 end
 =end
 
-play :d5
-sleep s
-play :e5, sustain: 1
-sleep s
-play :d5
-sleep s
-play :c5, sustain: 1
-sleep s
-play :a4
-sleep s
-play :d5
-sleep s
-play :e5
-sleep s
-play :d5, sustain: 1.5
-sleep s
-play :c5
-sleep s
-play :a4
-sleep s
-play :d5, sustain: 1
-sleep s
-play :c5, sustain: 3
-sleep s
-play :g4
-sleep s
-play :g4
-sleep s
+play :d5 #lis
+sleep 0.5
+play :e5, sustain: 1 #ten
+sleep 1
+play :d5 #care
+sleep 0.5
+play :c5, sustain: 1 #ful
+sleep 1
+play :a4 #ly
+sleep 1
+play :d5 #to
+sleep 0.5
+play :e5 #the
+sleep 1
+play :d5, sustain: 1.5 #sound
+sleep 1
+play :c5 #of
+sleep 0.5
+play :a4 #your
+sleep 0.5
+play :d5, sustain: 1 #lone
+sleep 1
+play :c5, sustain: 3 #li
+sleep 0.5
+play :g4 #ness
+sleep 2
+play :g4 #like
+sleep 0.5
 #bridge
 =begin
 brlyrics = [:e5, :d5, :c5, :c5, :a4, :d5, :c5, :c5, :d5, :d5, :c5, :g4, :g4]
@@ -171,28 +172,28 @@ brsus = [1.5, 1, 1, 0, 0, 1 ,1, 1, 0, 1, 3, 0, 0]
 end
 =end
 
-play :e5, sustain: 1.5
-sleep s
-play :d5, sustain: 1
-sleep s
-play :c5, sustain: 1
-sleep s
-play :c5
-sleep s
+play :e5, sustain: 1.5 #a
+sleep 1
+play :d5, sustain: 1  #heart
+sleep 0.5
+play :c5, sustain: 1 #beat
+sleep 1
+play :c5 #drives
+sleep 1
 play :a4
-sleep s
-play :d5, sustain: 1
-sleep s
-play :c5, sustain: 1
-sleep s
-play :c5, sustain: 1
-sleep s
-play :d5
-sleep s
-play :d5, sustain: 1
-sleep s
+sleep 0.5
+play :d5, sustain: 1 #mad
+sleep 1
+play :c5, sustain: 1 #in 
+sleep 0.5
+play :c5, sustain: 1 #the
+sleep 1
+play :d5 #still
+sleep 0.5
+play :d5, sustain: 1 #ness
+sleep 1
 play :c5, sustain: 3
-sleep s
+sleep 1
 play :g4
 sleep s
 play :g4
