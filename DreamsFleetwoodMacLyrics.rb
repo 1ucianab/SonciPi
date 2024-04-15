@@ -208,7 +208,7 @@ qmimi = [1, 0.5, 0.5,0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 1]
 
 12.times do
   play qlyrics[q]
-  sleep s
+  sleep qmimi[q]
   q = q + 1 
 end
 =end
