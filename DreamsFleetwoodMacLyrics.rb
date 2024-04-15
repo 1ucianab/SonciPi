@@ -185,7 +185,7 @@ play :a4
 sleep 0.5
 play :d5, sustain: 1 #mad
 sleep 1
-play :c5, sustain: 1 #in 
+play :c5, sustain: 1 #in
 sleep 0.5
 play :c5, sustain: 1 #the
 sleep 1
@@ -193,9 +193,9 @@ play :d5 #still
 sleep 0.5
 play :d5, sustain: 1 #ness
 sleep 1
-play :c5, sustain: 3 #of 
+play :c5, sustain: 3 #of
 sleep 1
-play :g4 
+play :g4
 sleep 0.5
 play :g4
 sleep 1
@@ -204,6 +204,7 @@ sleep 1
 qlyrics = [:e5,:d5, :c5, :g4, :e5, :d5, :d5, :c5, :c5, :d5, :d5, :c5]
 q = 0
 qsus = [1.5, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 3]
+qmimi = [1, 0.5, 0.5,0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 1]
 
 12.times do
   play qlyrics[q]
@@ -213,26 +214,26 @@ end
 =end
 
 play :e5, sustain: 1.5
-sleep s
+sleep 1
 play :d5, sustain: 1
-sleep s
+sleep 0.5
 play :c5, sustain: 1
-sleep s
+sleep 0.5
 play :g4
-sleep s
+sleep 0.5
 play :e5
-sleep s
+sleep 1
 play :d5 #rem-
-sleep s
+sleep 0.5
 play :d5, sustain: 1 #em-
-sleep s
+sleep 0.5
 play :c5 #ber-
-sleep s
+sleep 0.5
 play :c5 #ring
-sleep s
+sleep 0.5
 play :d5 #what
-sleep s
-play :d5, sustain: 1 #you 
-sleep s
+sleep 0.5
+play :d5, sustain: 1 #you
+sleep 1
 play :c5, sustain: 3 #had
-sleep s
+sleep 1
