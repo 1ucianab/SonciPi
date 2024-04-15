@@ -164,10 +164,11 @@ sleep 0.5
 brlyrics = [:e5, :d5, :c5, :c5, :a4, :d5, :c5, :c5, :d5, :d5, :c5, :g4, :g4]
 br = 0
 brsus = [1.5, 1, 1, 0, 0, 1 ,1, 1, 0, 1, 3, 0, 0]
+brmimi = [1, 0.5, 1, 1, 0.5, 1, 0.5, 1, 0.5, 1, 1, 0.5, 1]
 
 13.times do
   play brlyrics[br], sustain: brsus[br]
-  sleep s
+  sleep brmimi[br]
   br = br + 1
 end
 =end
@@ -192,12 +193,12 @@ play :d5 #still
 sleep 0.5
 play :d5, sustain: 1 #ness
 sleep 1
-play :c5, sustain: 3
+play :c5, sustain: 3 #of 
 sleep 1
+play :g4 
+sleep 0.5
 play :g4
-sleep s
-play :g4
-sleep s
+sleep 1
 
 =begin
 qlyrics = [:e5,:d5, :c5, :g4, :e5, :d5, :d5, :c5, :c5, :d5, :d5, :c5]
@@ -221,17 +222,17 @@ play :g4
 sleep s
 play :e5
 sleep s
-play :d5
+play :d5 #rem-
 sleep s
-play :d5, sustain: 1
+play :d5, sustain: 1 #em-
 sleep s
-play :c5
+play :c5 #ber-
 sleep s
-play :c5
+play :c5 #ring
 sleep s
-play :d5
+play :d5 #what
 sleep s
-play :d5, sustain: 1
+play :d5, sustain: 1 #you 
 sleep s
-play :c5, sustain: 3
+play :c5, sustain: 3 #had
 sleep s
