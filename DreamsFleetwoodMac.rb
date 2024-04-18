@@ -26,14 +26,14 @@ tsus = [1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 3]
 tmimi = [1, 0.5, 1, 0.5, 1, 1, 0.5, 1, 0.5, 1, 1]
 
 #repeats throughout song
-define :back do |n, n2, n3, s|
-  play n, sustain: s, amp: 0.5
-  play n2, sustain: s, amp: 0.5
-  play n3, sustain: s, amp: 0.5
+define :back do |n, n2, n3, s, a|
+  play n, sustain: s, amp: a
+  play n2, sustain: s, amp: a
+  play n3, sustain: s, amp: a
   sleep 2
-  play n, sustain: s, amp: 0.5
-  play n2, sustain: s, amp: 0.5
-  play n3, sustain: s, amp: 0.5
+  play n, sustain: s, amp: a
+  play n2, sustain: s, amp: a
+  play n3, sustain: s, amp: a
   sleep 2
 end
 # end of repeating segment
@@ -41,21 +41,21 @@ end
 sample g1, amp: 2
 sleep 8
 
-back :f3, :a3, :c4, 1.6
+back :f3, :a3, :c4, 1.6, 0.5
 
-back :g3, :b3, :d4, 1.6
+back :g3, :b3, :d4, 1.6, 0.5
 
-back :f3, :a3, :c4, 1.6
+back :f3, :a3, :c4, 1.6, 0.5
 
-play :g3, sustain: 3
-play :b3, sustain: 3
-play :d4, sustain: 3
+play :g3, sustain: 3, 0.5
+play :b3, sustain: 3, 0.5
+play :d4, sustain: 3, 0.5
 
 sleep 3
 
 live_loop :foo do
-  back :f3, :a3, :c4, 1.6
-  back :g3, :b3, :d4, 1.6
+  back :f3, :a3, :c4, 1.6, 0.5
+  back :g3, :b3, :d4, 1.6, 0.5
 end
 
 14.times do
