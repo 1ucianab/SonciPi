@@ -3,7 +3,6 @@
 
 use_bpm 120
 use_synth :piano
-s = 1
 
 freedom = "C:/Users/luciana_brennan/Desktop/you_want_your_freedom.mp3"
 down = "C:/Users/luciana_brennan/Desktop/keep_you_down.mp3"
