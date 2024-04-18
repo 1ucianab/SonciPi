@@ -87,34 +87,5 @@ sleep 3
 12.times do
   play tlyric[t], sustain: tsus[t]
   sleep tmimi[t]
+  t = t + 1
 end
-
-=begin
-16.times do
-  play hlyrics[h], sustain: hsus[h]
-  sleep hmimi[h]
-  h = h + 1
-end
-
-sleep 3
-
-14.times do
-  play sblyrics[sb], sustain: sbsus[sb]
-  sleep sbmimi[sb]
-  sb = sb + 1
-end
-
-sleep 3
-
-13.times do
-  play brlyrics[br], sustain: brsus[br]
-  sleep brmimi[br]
-  br = br + 1
-end
-
-12.times do
-  play qlyrics[q]
-  sleep qmimi[q]
-  q = q + 1
-end
-=end
