@@ -90,6 +90,7 @@ sleep 3
   t = t + 1
 end
 
+sleep 1 
 sample outro amp: 1
 sleep 1
 sample outro amp: 0.7
