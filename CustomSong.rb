@@ -15,7 +15,7 @@ sleep 2
 sample Rooster
 
 sleep 9
-#banjo
+
 live_loop :banjo1 do
   play 78, amp: 0.5
   sleep s
@@ -144,7 +144,6 @@ live_loop :banjo_2 do
   play 62, amp: q
   sleep s
   
-  
   play 62, amp: q
   sleep s
   play 66, amp: q
@@ -162,4 +161,5 @@ live_loop :banjo_2 do
   banjo2
   
 end
-#shaun the sheeppppppppppppp --> fade out to then play next song
+#shaun the sheeppppppppppppp --> fade out to then play next song 
+#orr a whooshing noise
