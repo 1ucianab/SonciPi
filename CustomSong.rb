@@ -162,3 +162,4 @@ live_loop :banjo_2 do
   banjo2
   
 end
+#shaun the sheeppppppppppppp --> fade out to then play next song
