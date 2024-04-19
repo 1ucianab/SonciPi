@@ -2,8 +2,8 @@ use_bpm 120
 use_synth :piano
 
 # Define sample paths
-Rooster = "C:/Users/luciana_brennan/Desktop/Rooster Sound Effect1.wav"
-Harmonica = "C:/Users/luciana_brennan/Desktop/Harmonica.wav"
+Rooster = "C:/Users/luciana_brennan/Desktop/Rooster.mp3"
+Harmonica = "C:/Users/luciana_brennan/Desktop/Harmonica1.mp3"
 
 # Function to play banjo1 melody
 define :play_banjo1 do
@@ -52,9 +52,9 @@ end
 
 
 
-  
-  =begin
-    use_bpm 120
+
+=begin
+use_bpm 120
 use_synth :piano
 
 # Define sample paths
@@ -119,4 +119,4 @@ end
 fade_out(:banjo1)
 fade_out(:banjo2)
 
-  =end
+=end
