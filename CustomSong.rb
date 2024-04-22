@@ -3,27 +3,29 @@
 #https://musescore.com/user/23197591/scores/4347736
 
 use_bpm 120
-use_synth :piano
+use_synth :hollow
 s = 0.5
 q = 0.2
+loop_running = true
+Rooster = "C:/Users/luciana_brennan/Desktop/Rooster.mp3"
+Harmonica = "C:/Users/luciana_brennan/Desktop/Harmonica1.mp3"
+intro = "C:/Users/luciana_brennan/Desktop/intro.mp3"
 
-Rooster = "C:/Users/luciana_brennan/Desktop/Rooster Sound Effect1.wav"
-Harmonica = "C:/Users/luciana_brennan/Desktop/Harmonica.wav"
-
-sample Harmonica
+sample Harmonica, amp: 0.5
 sleep 2
-sample Rooster
+sample Rooster, amp: 0.5
 
 sleep 9
 
-live_loop :banjo1 do
+1.times do
+  break unless loop_running
   play 78, amp: 0.5
   sleep s
   play 80, amp: 1
   sleep s
-  play 78, amp: 1.5
+  play 78
   sleep s
-  play 82, amp: 2
+  play 82
   
   sleep 1
   
@@ -93,73 +95,21 @@ live_loop :banjo1 do
   play 78
   sleep s
   play 74
-  
 end
+
 
 sleep 1
 
-live_loop :banjo_2 do
-  sleep 1
-  play 62, amp: q
-  sleep s
-  play 66, amp: q
-  sleep s
-  play 62, amp: q
-  sleep s
-  play 66, amp: q
-  sleep s
-  play 62, amp: q
-  
-  define :banjo2 do
-    play 66, amp: q
-    sleep s
-    play 62, amp: q
-    sleep s
-    play 66, amp: q
-    sleep s
-    play 62, amp: q
-    sleep s
-    
-    play 65, amp: q
-    sleep s
-    play 62, amp: q
-    sleep s
-    play 66, amp: q
-    sleep s
-    play 62, amp: q
-    sleep s
-  end
-  
-  banjo2
-  banjo2
-  banjo2
-  banjo2
-  
-  play 66, amp: q
-  sleep s
-  play 62, amp: q
-  sleep s
-  play 66, amp: q
-  sleep s
-  play 62, amp: q
-  sleep s
-  
-  play 62, amp: q
-  sleep s
-  play 66, amp: q
-  sleep s
-  play 62, amp: q
-  sleep s
-  play 66, amp: q
-  sleep s
-  play 62, amp: q
-  
-  banjo2
-  banjo2
-  banjo2
-  banjo2
-  banjo2
-  
-end
-#shaun the sheeppppppppppppp --> fade out to then play next song 
-#orr a whooshing noise
+play 78, amp: 1.5
+sleep s
+play 80, amp: 1
+sleep s
+play 78, amp: 0.5
+sleep s
+play 82, amp: 0.3
+
+sample intro, amp: 0.5
+sleep 6
+sample intro, amp: 1
+sleep 6
+sample intro, amp: 2
