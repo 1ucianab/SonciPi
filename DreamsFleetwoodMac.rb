@@ -95,12 +95,6 @@ loop_running = false
 
 sleep 1
 
-back :f3, :a3, :c4, 1.6
-
-back :g3, :b3, :d4, 1
-
-back :f3, :a3, :c4, 0.5
-
 play :g3, sustain: 3, amp: 0.3
 play :b3, sustain: 3, amp: 0.3
 play :d4, sustain: 3, amp: 0.3
