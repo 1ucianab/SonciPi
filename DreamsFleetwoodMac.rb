@@ -3,6 +3,7 @@
 
 use_bpm 120
 use_synth :hollow
+v = 0.4
 
 freedom = "C:/Users/luciana_brennan/Desktop/Freedom.mp3"
 g1 = "C:/Users/luciana_brennan/Desktop/Guitars1.mp3"
@@ -75,11 +76,11 @@ end
 
 sleep 3
 
-sample outro, amp: 0.4
+3.times do 
+sample outro, amp: v
 sleep 1
-sample outro, amp: 0.6
-sleep 1
-sample outro, amp: 0.8
+v = v + 0.2
+end
 
 sleep 2
 
